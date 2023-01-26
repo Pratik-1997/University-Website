@@ -7,12 +7,13 @@
     <title>University</title>
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
-    
-<section class="header">
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+<header class="header">
         <nav>
             <a href="#"><img src="assets/images/logo.png" alt=""></a>
             <div class="nav-links" id="navLinks">
@@ -29,16 +30,16 @@
         </nav>
 
         <div class="text-box">
-            <h1>World's Biggest University</h1>
+            <h1 id="quote">World's Biggest University</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat </br>consequuntur exercitationem quis error perspiciatis ullam recusandae est beatae atque!</p>
 
             <a href="#" class="hero-btn">Visit Us to know More</a>
         </div>
-</section>
+</header>
 
 <!-- Course -->
 
-<section class="course">
+<section class="course" >
     <h1>Course We Offer</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, molestiae!</p>
 
@@ -47,11 +48,11 @@
             <h3>Intermedia</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit repellendus eveniet ipsum, rerum obcaecati consequuntur laborum suscipit soluta, modi facilis optio unde? Minus, sint.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" >
             <h3>Degree</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit repellendus eveniet ipsum, rerum obcaecati consequuntur laborum suscipit soluta, modi facilis optio unde? Minus, sint.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" >
             <h3>Post-Graduation</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit repellendus eveniet ipsum, rerum obcaecati consequuntur laborum suscipit soluta, modi facilis optio unde? Minus, sint.</p>
         </div>
@@ -153,7 +154,7 @@
 </section>
 
 <!-- Foooter -->
-<section class="footer">
+<footer class="footer">
    <h4>About Us</h4>
    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione </br> bvoluptatem ipsum autem deserunt laudantium ipsa voluptate culpa fugit cumque quis.</p>
     <div class="icons">
@@ -163,22 +164,18 @@
         <i class="fas fa-linkedin"></i>
     </div>
     <p>Made with <i class="fa fa-heart-o"></i> by Pk</p>
-</section>
+</footer>
+</div>
+</div>
 
 
-<!-- Javascript for menu toggle-->
-<script>
-    var navLinks=document.getElementById("navLinks");
 
-    function showMenu(){
-        navLinks.style.right = "0";
-     
-    }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
 
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
